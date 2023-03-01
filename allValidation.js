@@ -1,4 +1,4 @@
-function validationName(inputName) {
+export function validationName(inputName) {
   const name = inputName;
   const nameRegexp = /^([А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23})$/;
   validation(name, nameRegexp);
@@ -16,5 +16,3 @@ export function validationEmail(inputEmail) {
     /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
   validation(email, phoneRegexp);
 }
-
-export default validationName;
