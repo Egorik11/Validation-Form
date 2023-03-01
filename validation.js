@@ -23,7 +23,7 @@ function validation(input, regexp) {
   if (regexp.test(input)) {
     isValid = true;
   } else {
-    throw new Error('Вы ввели некоректные данные');
+    throw new Error(`Вы ввели некоректные данные в поле ${input}`);
   }
   return isValid;
 }
