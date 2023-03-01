@@ -6,7 +6,8 @@ function validationName(inputName) {
 
 function validationNumberPhone(numberPhone) {
   const phone = numberPhone;
-  const phoneRegexp = /(\d?)(\d{3})(\d{3})(\d{2})(\d{2})/g;
+  const phoneRegexp =
+    /^\+?\d{1,3}\s?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{2}[-.\s]?\d{2}$/;
   validation(phone, phoneRegexp);
 }
 
