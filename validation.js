@@ -19,10 +19,11 @@ function validationEmail(inputEmail) {
 }
 
 function validation(input, regexp) {
-  let isValid = false;
+  let isValid;
   if (regexp.test(input)) {
     isValid = true;
   } else {
+    isValid = false;
     throw new Error('Вы ввели некоректные данные');
   }
   return isValid;
