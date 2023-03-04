@@ -19,11 +19,9 @@ function validationEmail(inputEmail) {
 }
 
 function validation(input, regexp) {
-  let isValid = false;
   if (regexp.test(input)) {
-    isValid = true;
+    return true;
   } else {
-    return isValid;
+    return false;
   }
-  return isValid;
 }
